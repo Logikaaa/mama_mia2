@@ -1,83 +1,57 @@
 body {
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 {
-    font-size: 50px;
+.top {
+    background-color: coral;
     text-align: center;
 }
-
-nav {
-    border-top: 3px solid royalblue;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 3px solid royalblue;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 20px;
-    color: navy;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.head_img {
-    display: block;
-    margin: 0 auto 0 auto;
-}
-
-h2 {
-    color: green;
-    margin-left: 100px;
-    font-size: 30px;
-    font-family: cursive;
-}
-
-.catalog a {
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px dotted black;
-    font-size: 20px;
-}
-
-.catalog {
+nav{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 700px;
-    margin: 0 auto;
-    background-color: lightblue;
+}
+.nav-link{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #1E1E1E;
+    border: 2px dotted black;
+    padding: 5px;
+}
+.nav-link:first-child{
+    font-weight: 700;  
+    color: orangered;
+
 }
 
-.product {
-    width: 150px;
-    text-align: center;
-    padding: 10px;
-    border: 5px double orange;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: bisque;
-    position: relative;
+
+.nav-link:hover:first-child{
+    color: #1E1E1E;
+    border: 5px dotted black;
+    transition: 0.2s ease-in;
 }
 
-.product::before {
-    content: url();
-    width: 30px;
-    height: 30px;
-    display: block;
-    opacity: 0.5;
-    margin-bottom: 10px;
-}
 
-.product:hover::before {
-    opacity: 1;
+.nav-link:hover{
+    font-weight: 700;
+    color: green;
+    border: 5px dotted black;
+    transition: 0.2s ease-in;
+}
+.down {
+    background: coral;
+    padding: 5px;
+    width: 100%;
+    height: 10%;
 }
 
 .principles {
     display: flex;
-    border-top: 5px solid navy;
-    border-bottom: 5px solid navy;
+    border-top: 5px solid cyan;
+    border-bottom: 5px solid cyan;
     justify-content: space-between; 
     width: 700px;
     margin: 0 auto;
@@ -89,74 +63,10 @@ h2 {
     width: 120px;
 }
 
-.question-answer {
-    width: 700px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.question {
-    color: brown;
-}
-
-.qua-item::before {
-    content: url("/uploads/2021/03/question_0_1614951460.svg");
-    width: 10px;
-    height: 20px;
-    display: inline-block;
-}
-
-.slogan {
-    display: flex;
-    padding: 30px;
-    color: mediumblue;
-    margin-left: 150px;
-}
-
-.slogan_img {
-    padding: 10px;
-    border: 5px solid orange;
-    border-radius: 50%;
-    border-radius: 20px;
-}
-
-.slogan_text {
-    float:left;
-    color: mediumblue;
-    margin: 20px;
-    width: 300px;
-}
-
-.slogan_text::after {
-    content: url("/uploads/2021/03/slogan_0_1614961282.svg");
-    display: block;
-    width: 45px;
-    height: 10px;
-}
-
-footer {
-    background-color: darkolivegreen;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-}
-.product:hover{
-    box-shadow: 0 10px 15px 0 orange;
-    top: 10px;
-}
-
- .vidguk1{
-    display: flex;
-    padding: 10px;
-    justify-content: flex-start;
-}
-
-.vidguk {
-    padding:10px;
-    justify-content: space-around;
-}
-.img2 {
-     height: 60px;
-     width: 60px;
-     margin: 5px;
+main h2 {
+    color: yellowgreen;
+    margin-left: 100px;
+    font-size: 54px;
+    font-family: cursive;
+    text-align: center;
 }
